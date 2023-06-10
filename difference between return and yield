@@ -1,0 +1,17 @@
+''' difference between return and yield'''
+
+def hg():
+    n1=10
+    for i in range(1,10):
+        n1+=i
+        return n1
+print(hg())      
+
+def gh():
+    s=0
+    for i in range(3,10):
+        s+= i
+        yield s
+        
+for j in gh():
+    print(j)
