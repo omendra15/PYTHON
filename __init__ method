@@ -1,0 +1,15 @@
+''' __init__ method '''
+
+class sun:
+    
+    #constructor
+    def __init__(self, work):
+        self.work = work
+        
+    #method    
+    def what(self):
+        print("work is - ", self.work)
+  
+s = sun('cloud architct')
+
+s.what()
