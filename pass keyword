@@ -1,0 +1,16 @@
+pass keyword used to avoid errors when empty code is not allowed
+for example -
+Before
+for i in range(90):
+
+error:  File "/home/main.py", line 10
+    def gh():
+    ^
+IndentationError: expected an indented block after 'for' statement on line 7
+
+after
+
+for i in range(90):
+  pass
+ 
+execution does not show any error
