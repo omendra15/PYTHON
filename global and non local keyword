@@ -1,0 +1,21 @@
+
+
+#global variable
+a = 12
+b = 14
+
+def add1():
+    c = a+b
+    print(c)
+    
+add1()
+
+def add2():
+    a=34 
+    
+    def ad():
+        nonlocal a  #tell python explicitly to use a in ad'
+        a = a + 40
+        print(a)
+    ad()
+add2()
