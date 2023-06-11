@@ -1,0 +1,4 @@
+lambda : n number of arguments and return one value , have only one expression
+
+a = lambda x,y: x*y
+print(a(5,6))
