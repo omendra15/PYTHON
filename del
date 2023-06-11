@@ -1,0 +1,16 @@
+del : used to delete variable or list value
+
+a = 10
+b = "python1"
+
+print(a,"\n",b)
+
+del a,b
+
+print(a,"\n",b)
+
+output:
+10 
+ python1
+
+NameError: name 'a' is not defined
