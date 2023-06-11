@@ -1,0 +1,25 @@
+try : code is checked in this block, if error occured except is executed
+except
+finally : always executed
+assert : check if there is no error nothing happens but if there is error in code then 'ASSERTION ERROR'raised
+raise : to raise exception explicitly
+
+a = 10
+b = 0
+try:
+    g = a/b
+    print(g)
+except ZeroDivisionError:
+    print("cant divide by zero")
+
+finally:
+    print("always print")
+
+
+t =23
+if t!=12:
+    raise TypeError("both are different numbers")
+
+print("The value of a / b is : ")
+assert b != 0, "Divide by 0 error"
+print(a / b)
