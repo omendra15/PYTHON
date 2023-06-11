@@ -1,0 +1,12 @@
+#in used to check container contains value or not
+
+name = 'universal truth'
+if 's' in name:
+    print("s is part of name")
+else:
+    print("not part of name")
+    
+#is
+
+print('' is '')  #string cant change location hence occupy same location
+print({} is {}) #dictionary can be changed once allocated location can be changed
