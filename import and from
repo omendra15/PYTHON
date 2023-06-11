@@ -1,0 +1,8 @@
+import : use to include module in current program
+from : use functionality of module in program directly
+
+import math
+from math import isqrt
+print(math.isqrt(9), "\n")
+
+print(isqrt(9))
