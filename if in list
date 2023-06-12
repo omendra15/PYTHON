@@ -1,0 +1,7 @@
+#if in list
+
+l = [i for i in range(10) if i%3==0]
+
+print(l)
+
+[0, 3, 6, 9]
