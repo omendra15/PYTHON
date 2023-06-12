@@ -1,0 +1,5 @@
+
+import sys
+
+sys.stdout.write("i know you")
+sys.stdout.write("are a good human being")
