@@ -1,0 +1,7 @@
+a,b = input("enter two numbers").split()
+
+print("first {} and second is {}".format(a,b))
+
+output:
+enter two numbersom we
+first om and second is we
