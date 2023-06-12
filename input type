@@ -1,0 +1,5 @@
+i = int(input("number-"))
+j = float(input("number decimal - "))
+
+print(i,"\t", type(i))
+print(j,"\t", type(j))
