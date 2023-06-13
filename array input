@@ -1,0 +1,40 @@
+arr = [int(x) for x in input("enter number -").split()]
+print(*arr, sep="\n")
+
+y=0
+for x in arr:
+    y = y+x
+    
+print(y)
+
+output:
+enter number -1 2 3 4 5
+1
+2
+3
+4
+5
+15
+
+# input using in-built stdin,stdout:
+
+import sys
+
+arr2 = [int(z) for z in sys.stdin.readline().split()]
+
+for x in arr2:
+    sys.stdout.write(str(x))
+    
+output:
+2 3
+23
+
+# array input using function:
+import sys
+
+def get_arr():
+    return [int(z) for z in sys.stdin.readline().split()]
+
+arr2 = get_arr()
+for x in arr2:
+    print(x)
