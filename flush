@@ -1,0 +1,12 @@
+#flush 
+
+import time
+
+count = 3
+for i in reversed(range(4)):
+    if i>0:
+        print(i,end=">>>", flush =True)
+        time.sleep(1)
+    else:
+        print("start")
+
