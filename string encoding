@@ -1,0 +1,24 @@
+#String encoding
+
+a = 'GeeksforGeeks'
+
+# initialising a byte object
+c = b'GeeksforGeeks'
+
+d = a.encode('ASCII')
+
+if (d==c):
+	print ("Encoding done")
+else : print ("Encoding failed")
+print(d)
+
+#decoding
+d=c.decode('ASCII')
+if d==a: print('decode done')
+print(d)
+
+output:
+Encoding done
+b'GeeksforGeeks'
+decode done
+GeeksforGeeks
