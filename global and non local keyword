@@ -19,3 +19,34 @@ def add2():
         print(a)
     ad()
 add2()
+
+
+---------------------------------------------------
+'''
+global variable '''
+
+a=10
+
+def m1():
+    global a
+    a=2
+    print('inside ,m1',a)
+    
+def m2():
+    global a
+    a=3
+    print('inside m2',a)
+
+
+print(a)
+m2()
+print(a)
+m1()
+print(a)
+
+output:
+10
+inside m2 3
+3
+inside ,m1 2
+2
