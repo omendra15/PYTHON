@@ -1,0 +1,26 @@
+'''packing and unpacking arguments'''
+
+def a(a,b,c,d):
+    print(a,b,c,d)
+    
+j= [1,2,3,4]
+
+a(*j) #unpacking the arguments; *is used for tuple
+
+def addd(*arg):  #packing the arguments in case dont know number of argumentswill be passed
+    return sum(arg)
+    
+print(addd(1,4,5,6))
+print(addd(5,6))
+
+def c(a,b,c):
+    print(a,b,c)
+    
+d= {'a':1,'b':2,'c':3}
+c(**d) #unpacking the arguments; **used for dictionary
+
+output:
+1 2 3 4
+16
+11
+1 2 3
