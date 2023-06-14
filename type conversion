@@ -1,0 +1,74 @@
+'''type conversion'''
+#implicit conversion
+
+x = 10
+
+print("x is of type:",type(x))
+
+y = 10.6
+print("y is of type:",type(y))
+
+z = x + y
+
+print(z)
+print("z is of type:",type(z))
+
+#explicit conversion
+a = "101"
+b= int(a,2) # int(var,base)
+print(b)
+
+c = float(a)
+print(c)
+
+e='1'
+print(ord(e))  #char to integer
+
+print(hex(25)) #int to hexadecimal basestring
+
+print(oct(17)) #int to octal string
+
+#------------------------------------------------------------------
+
+st = "pythonn"
+print(tuple(st))
+
+print(set(st))
+
+print(list(st))
+
+#------------------------------------------------------------------
+tup = (('a', 1) ,('f', 2), ('g', 3)) 
+print(dict(tup)) # tuple to dictionary
+
+a=1; b=25
+print(complex(a,b)) #int to coplex number
+
+print(chr(78))  #number to character
+
+output :
+x is of type: <class 'int'>
+y is of type: <class 'float'>
+20.6
+z is of type: <class 'float'>
+5
+101.0
+49
+0x19
+0o21
+('p', 'y', 't', 'h', 'o', 'n', 'n')
+{'h', 'o', 't', 'y', 'p', 'n'}
+['p', 'y', 't', 'h', 'o', 'n', 'n']
+{'a': 1, 'f': 2, 'g': 3}
+(1+25j)
+N
+
+
+
+
+
+
+
+
+
+
