@@ -1,0 +1,70 @@
+'''
+dictionary operations
+'''
+
+dic = {1:45,2:44}
+
+print(dic,end="\n")
+
+#using dict method
+
+dic = dict([(1,'om'),(2,'singh')])
+print(dic)
+
+#nested dictionary
+dicn = {1:'geekss', 2:'fun',3:{'a':'apple','b':'boy'}}
+print(dicn)
+
+#adding elements in dic
+
+dic ={}
+print(dic)
+
+dic[0] = 1
+dic[1] = 'assssdf'
+dic[2] = 'fh'
+
+print(dic)
+
+dic['value'] = 45
+print(dic)
+
+dic[2] = 'new one'
+print(dic)
+
+#assessing elements
+
+print(dic[1])
+print(dic.get('value'))
+
+print(dicn[3]['a']) #assessing elements from nested dicn
+print(dic)
+del(dic[1])
+print(dic)
+
+
+d =dic.keys()
+print(d)
+
+d = dic.items()
+print(d)
+
+dic.pop(0)
+print(dic)
+
+output:
+{1: 45, 2: 44}
+{1: 'om', 2: 'singh'}
+{1: 'geekss', 2: 'fun', 3: {'a': 'apple', 'b': 'boy'}}
+{}
+{0: 1, 1: 'assssdf', 2: 'fh'}
+{0: 1, 1: 'assssdf', 2: 'fh', 'value': 45}
+{0: 1, 1: 'assssdf', 2: 'new one', 'value': 45}
+assssdf
+45
+apple
+{0: 1, 1: 'assssdf', 2: 'new one', 'value': 45}
+{0: 1, 2: 'new one', 'value': 45}
+dict_keys([0, 2, 'value'])
+dict_items([(0, 1), (2, 'new one'), ('value', 45)])
+{2: 'new one', 'value': 45}
